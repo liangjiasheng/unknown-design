@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index1/index",
+    "pages/getMiniProgramCode/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "Unknown design",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#000000",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "推荐",
+      "iconPath": "./images/recommand.png",
+      "selectedIconPath": "./images/recommand-active.png"
+    }, {
+      "pagePath": "pages/index1/index",
+      "text": "奖项",
+      "iconPath": "./images/award.png",
+      "selectedIconPath": "./images/award-active.png"
+    }, {
+      "pagePath": "pages/getMiniProgramCode/index",
+      "text": "我的",
+      "iconPath": "./images/user.png",
+      "selectedIconPath": "./images/user-active.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "onReachBottomDistance": 100
+}

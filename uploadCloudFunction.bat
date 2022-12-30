@@ -1,0 +1,1 @@
+"D:\小工具安装包\微信web开发者工具\cli.bat" cloud functions deploy --e life-ctvft --n quickstartFunctions --r --project "D:\Git\unknown-design" --report_first --report
