@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/index1/index",
-    "pages/getMiniProgramCode/index"
+    "pages/recommand/index",
+    "pages/award/index",
+    "pages/user/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -14,17 +14,17 @@
   "tabBar": {
     "selectedColor": "#000000",
     "list": [{
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/recommand/index",
       "text": "推荐",
       "iconPath": "./images/recommand.png",
       "selectedIconPath": "./images/recommand-active.png"
     }, {
-      "pagePath": "pages/index1/index",
+      "pagePath": "pages/award/index",
       "text": "奖项",
       "iconPath": "./images/award.png",
       "selectedIconPath": "./images/award-active.png"
     }, {
-      "pagePath": "pages/getMiniProgramCode/index",
+      "pagePath": "pages/user/index",
       "text": "我的",
       "iconPath": "./images/user.png",
       "selectedIconPath": "./images/user-active.png"

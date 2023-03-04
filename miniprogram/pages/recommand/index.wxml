@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="index">
+  <swiper indicator-dots
+        autoplay interval="2000" duration="500">
+        <block wx:for="{{banners}}" 
+        wx:for-item="banner" wx:key="banner._id">
+          <swiper-item>
+            <image mode="heightFix" src="{{banner.file_id}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    <view class="index-scroll">
+      <scroll-view scroll-y="true" style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+          <block wx:for="{{drafts}}" wx:for-item="draft" wx:key="draft._id">
+            <image mode="widthFix" src="{{draft.file_id}}"></image>
+          </block>
+      </scroll-view>
+    </view>
+
+   
+  </view>

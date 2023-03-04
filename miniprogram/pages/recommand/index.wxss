@@ -1,0 +1,8 @@
+/* pages/index/index.wxss 中引入样式 */
+.index {
+  background-color: #fff;
+}
+.index .index-scroll {
+  padding: 20px 30px 0 30px;
+  box-sizing: border-box;
+}
