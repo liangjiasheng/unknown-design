@@ -7,5 +7,5 @@ const db = cloud.database()
 
 // 获取轮播图
 exports.main = async (event, context) => {
-  return db.collection('banner').get();
+  return db.collection('banner').limit(3).orderBy('uploadTime', 'desc').get();
 }

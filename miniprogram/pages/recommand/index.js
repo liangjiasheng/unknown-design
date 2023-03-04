@@ -20,9 +20,8 @@ Page({
      * 页面上拉触底事件的处理函数
      */
   async onReachBottom() {
-    this.data.offset = this.data.drafts.length === this.data.total ? this.data.drafts.length + 1 : 0;
+    this.data.offset = 0;
 
-    console.log(this.data.offset)
       wx.showLoading({
         title: '加载中',
       })
