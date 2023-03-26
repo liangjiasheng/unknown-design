@@ -1,0 +1,20 @@
+/* pages/detail/index.wxss */
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-img {
+  width: 100%;
+}
+
+.detail-title {
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.detail-content {
+  font-size: 14px;
+}

@@ -1,18 +1,44 @@
-<!--index.wxml-->
-<view class="index">
+<!--pages/recommand/index.wxml-->
+<view class="recommand">
   <swiper indicator-dots
-        autoplay interval="2000" duration="500">
+       interval="2000" duration="500">
         <block wx:for="{{banners}}" 
         wx:for-item="banner" wx:key="banner._id">
           <swiper-item>
-            <image mode="heightFix" src="{{banner.file_id}}"></image>
+            <image 
+            class="recommand-swiper__img"
+            mode="scaleToFill" src="{{banner.file_id}}"></image>
           </swiper-item>
         </block>
       </swiper>
-    <view class="index-scroll">
+    <view class="recommand-scroll">
       <scroll-view scroll-y="true" style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
           <block wx:for="{{drafts}}" wx:for-item="draft" wx:key="draft._id">
-            <image mode="widthFix" src="{{draft.file_id}}"></image>
+            <view class="recommand-scroll__block"
+            data-draft="{{draft}}"
+            bindtap="handleClick">
+              <image 
+            class="recommand-scroll__img"
+            mode="scaleToFill" src="{{draft.file_id}}"></image>
+            <view style="display: flex;">
+              <view
+            class="recommand-scroll__tag"
+            wx:for="{{draft.tags}}" wx:for-item="tag" wx:key="tag"
+            >
+              {{tag}}
+            </view>
+            </view>
+            <view
+            class="recommand-scroll__title"
+            >
+              {{draft.title}}
+            </view>
+            <view
+            class="recommand-scroll__desc"
+            >
+              {{draft.description}}
+            </view>
+            </view>
           </block>
       </scroll-view>
     </view>

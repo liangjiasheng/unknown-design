@@ -20,7 +20,8 @@ Page({
      * 页面上拉触底事件的处理函数
      */
   async onReachBottom() {
-    this.data.offset = 0;
+    // this.data.offset = 0;
+    this.data.offset = this.data.drafts.length;
 
       wx.showLoading({
         title: '加载中',
@@ -43,6 +44,12 @@ Page({
       if (res) {
         const {result: {data, total}} = res;
         console.log('云函数getDrafts获取数据成功' , res)
+        if (!data.length) {
+          wx.showToast({
+            title: '数据加载完毕',
+          })
+          return;
+        }
         this.setData({
           drafts: [...this.data.drafts, ...data],
           total
@@ -70,6 +77,14 @@ Page({
     })
     .catch(err => {
       console.log('云函数getBanners获取数据失败' , err)
+    })
+  },
+
+  handleClick(e) {
+    const draft = JSON.stringify(e.currentTarget.dataset.draft);
+    console.log(draft)
+    wx.navigateTo({
+      url: `/pages/detail/index?draft=${draft}`
     })
   }
 })

@@ -1,6 +1,6 @@
 {
   "setting": {
-    "compileHotReLoad": true,
+    "compileHotReLoad": false,
     "urlCheck": true
   },
   "condition": {
@@ -51,6 +51,13 @@
           "name": "pages/updateRecordSuccess/index",
           "pathName": "pages/updateRecordSuccess/index",
           "query": "",
+          "scene": null
+        },
+        {
+          "name": "recommond",
+          "pathName": "pages/recommand/index",
+          "query": "",
+          "launchMode": "default",
           "scene": null
         }
       ]

@@ -1,8 +1,48 @@
-/* pages/index/index.wxss 中引入样式 */
-.index {
+/* pages/recommand/recommand.wxss 中引入样式 */
+.recommand {
   background-color: #fff;
 }
-.index .index-scroll {
-  padding: 20px 30px 0 30px;
+
+.recommand-swiper__img {
+  width: 100%;
+}
+
+.recommand .recommand-scroll {
+  padding: 0 30px;
   box-sizing: border-box;
+}
+
+.recommand .recommand-scroll .recommand-scroll__block {
+  padding: 20px 0;
+}
+
+.recommand .recommand-scroll .recommand-scroll__img {
+  width: 100%;
+  height: 180px;
+}
+
+.recommand .recommand-scroll .recommand-scroll__tag {
+  width: 32px;
+  height: 16px;
+  padding: 0 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: rgb(54, 53, 53);
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 16px;
+  border-radius: 4px;
+}
+
+.recommand .recommand-scroll .recommand-scroll__title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.recommand .recommand-scroll .recommand-scroll__desc {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #cdcdcd;
 }

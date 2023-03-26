@@ -1,0 +1,12 @@
+<!--pages/detail/index.wxml-->
+<view class="detail">
+  <image
+class="detail-img"
+    mode="scaleToFill" src="{{draft.file_id}}"></image>
+    <view class="detail-title">
+      {{draft.title}}
+    </view>
+    <view class="detail-content">
+      {{draft.content}}
+    </view>
+</view>
